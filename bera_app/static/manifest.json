@@ -1,0 +1,18 @@
+{
+  "name": "BERA — Conectadas para avanzar",
+  "short_name": "BERA Ñuble",
+  "description": "Demostración funcional para mujeres de la Región de Ñuble: movilidad, empleabilidad y emprendimiento.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFF7FB",
+  "theme_color": "#AD285F",
+  "lang": "es-CL",
+  "icons": [
+    {
+      "src": "/static/assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

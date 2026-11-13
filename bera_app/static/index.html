@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#AD285F" />
+  <title>BERA — Conectadas para avanzar (Ñuble)</title>
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" href="/static/assets/icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/static/css/styles.css" />
+</head>
+<body>
+  <div class="demo-ribbon" role="status">
+    Demostración: no coordina viajes ni procesa pagos reales — Región de Ñuble, Chile
+  </div>
+  <div id="offline-banner" class="offline-banner hidden" role="alert">
+    Sin conexión a internet. Algunas acciones requieren red para guardarse.
+  </div>
+
+  <header class="topbar">
+    <a href="#inicio" class="brand" data-route="inicio">
+      <img src="/static/assets/icon.svg" alt="BERA" />
+      <div>
+        <span class="brand-title">BERA</span>
+        <span class="brand-sub">Conectadas para avanzar</span>
+      </div>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <button class="nav-btn" data-route="inicio">Inicio</button>
+      <button class="nav-btn" data-route="movilidad">Movilidad</button>
+      <button class="nav-btn" data-route="empleos">Empleos</button>
+      <button class="nav-btn" data-route="emprendimientos">Emprendimientos</button>
+      <button class="nav-btn" data-route="perfil">Perfil</button>
+      <button class="nav-btn hidden" id="nav-admin-desktop" data-route="admin">Admin</button>
+    </nav>
+
+    <div class="top-actions" id="top-actions"></div>
+  </header>
+
+  <main class="container" id="app-root" tabindex="-1">
+    <div class="skeleton"></div>
+    <div class="skeleton"></div>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Navegación móvil">
+    <button data-route="inicio"><span>🏠</span><span>Inicio</span></button>
+    <button data-route="movilidad"><span>🚗</span><span>Movilidad</span></button>
+    <button data-route="empleos"><span>💼</span><span>Empleos</span></button>
+    <button data-route="emprendimientos"><span>🛍️</span><span>Vitrina</span></button>
+    <button data-route="perfil"><span>👤</span><span>Perfil</span></button>
+  </nav>
+
+  <div id="toast-container" aria-live="polite"></div>
+  <div id="modal-root"></div>
+
+  <script type="module" src="/static/js/app.js"></script>
+</body>
+</html>
